@@ -1,0 +1,208 @@
+/* /* ================ */
+/* FONT DEFINITIONS */
+/* ================ */
+@font-face {
+    font-family:'Open Sans';
+    font-weight:400;
+    font-style:normal;
+    src:local("Open Sans"), local("OpenSans"), url(../res/fonts/OpenSans.woff) format("woff");
+}
+@font-face {
+    font-family:"Raleway";
+    font-weight:400;
+    font-style:normal;
+    src:local("Raleway"), url(../res/fonts/Raleway.woff) format("woff");
+}
+@font-face {
+    font-family:"Raleway";
+    font-weight:700;
+    font-style:normal;
+    src:local("Raleway Bold"), url(../res/fonts/Raleway-bold.woff) format("woff");
+}
+@font-face {
+    font-family:"Righteous";
+    font-weight:400;
+    font-style:normal;
+    src:local("Righteous"), url(../res/fonts/Righteous.woff) format("woff");
+}
+/* =============== */
+/* GLOBAL/ELEMENTS */
+/* =============== */
+* {
+    margin:0;
+    padding:0;
+    border:0;
+    font-family:"Open Sans","Calibri",sans-serif;
+    font-size:16px;
+    box-sizing:border-box;
+    outline:0;
+    transition:0.2s all;
+}
+*:active {
+    outline:0;
+}
+body {
+    text-align:center;
+}
+/* ======== */
+/*  LAYOUT  */
+/* ======== */
+header {
+    background:#ddd;
+    padding:14px 22px;
+    margin:24px 20%;
+    display:block;
+}
+section {
+    margin-bottom:18px;
+    display:block;
+}
+footer {
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    background:#ddd;
+    padding:8px 12px;
+    transition:0s all;
+}
+aside {
+    display:inline-block;
+    padding:4px 12px;
+    position:absolute;
+    right:0;
+}
+/* ====== */
+/*  TEXT  */
+/* ====== */
+h1, h1 *, h2, h2 *, h3, h3 * {
+    font-family:"Raleway", "Helvetica", "Arial", sans-serif;
+    text-align:center;
+}
+h1, h1 * {
+    font-size:48px;
+}
+h1 {
+    margin-bottom:18px;
+    font-weight:normal;
+}
+h2, h2 * {
+    font-size:26px;
+}
+h2 {
+    margin-bottom:12px;
+    font-weight:normal;
+}
+h3, h3 * {
+    font-size:24px;
+}
+h3 {
+    margin-bottom:10px;
+    font-weight:normal;
+}
+a {
+    color:#09d;
+    text-decoration:none;
+}
+a:hover {
+    color:#2bf;
+    text-decoration:none;
+}
+ul {
+    -webkit-column-count:4;
+    -moz-column-count:4;
+    column-count:4;
+    -webkit-column-width:400px;
+    -moz-column-width:400px;
+    column-width:400px;
+    margin:12px 10%;
+    margin-bottom:64px;
+}
+li {
+    list-style-type:none;
+    position:relative;
+    padding:4px 8px;
+    text-align:left;
+}
+/* ======= */
+/*  FORMS  */
+/* ======= */
+input[type="text"], input[type="number"], textarea {
+    border:2px solid #aaa;
+    padding:4px 8px;
+    font-family:"Consolas", monospace;
+}
+input[type="text"]:focus, input[type="number"]:focus, textarea:focus {
+    border:2px solid #777;
+}
+input[type="number"] {
+    width:140px;
+}
+textarea {
+    transition:0s all;
+}
+button {
+    padding:4px 8px;
+    background:#09f;
+    color:#eee;
+    font-size:14px;
+}
+button:hover {
+    background:#2af;
+    box-shadow:inset 0 -2px 0 rgba(0,0,0,0.1);
+}
+button:active {
+    background:#07d;
+    box-shadow:inset 0 2px 0 rgba(0,0,0,0.1);
+}
+label {
+    padding-right:12px;
+}
+li label {
+    width:50%;
+    display:inline-block;
+}
+li input {
+    width:50%;
+}
+textarea#importer-input {
+    min-width:100%;
+    max-width:100%;
+    min-height:300px;
+}
+textarea#exporter-output {
+    min-width:100%;
+    max-width:100%;
+    display:block;
+    min-height:300px;
+    margin-bottom:16px;
+}
+button.major {
+    font-size:18px;
+    padding:8px 12px;
+    width:50%;
+}
+button#importer-submit {
+    font-size:22px;
+    width:100%;
+}
+button.major:hover {
+    box-shadow:inset 0 -4px 0 rgba(0,0,0,0.1);
+}
+button.major:active {
+    box-shadow:inset 0 4px 0 rgba(0,0,0,0.1);
+}
+#field-version-container {
+    display:none;
+}
+#empty-field {
+    color:#aaa;
+    text-align:center;
+    font-size:18px;
+}
+/* ========= */
+/*  UTILITY  */
+/* ========= */
+.hide {
+    display:none;
+}

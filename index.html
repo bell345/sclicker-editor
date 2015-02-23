@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Scholar Clicker Save Editor</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="assets/css/sheet.css" />
+    <script src="assets/js/jquery2.min.js"></script>
+    <script src="assets/js/sc-edit.js"></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="http://scholarclicker.com">Scholar Clicker</a>
+            Save Editor
+        </h1>
+        <h2>
+            <strong>Warning: Spoilers Ahead.</strong>
+            You shouldn't be here if you aren't a spoil-sport anyway.
+        </h2>
+        <section id="importer-container">
+            <h3>Import your Scholar Clicker save file here</h3>
+            <textarea id="importer-input"></textarea>
+            <button id="importer-submit" class="major">Submit</button>
+        </section>
+        <section id="searcher-container">
+            <h3>Search for fields (type to search)</h3>
+            <input type="text" id="searcher" />
+            <button id="searcher-clear">Clear</button>
+        </section>
+    </header>
+    <ul id="fields">
+        <li id="empty-field">
+            This is where the cool stuff appears.
+        </li>
+    </ul>
+    <footer>
+        <button id="exporter" class="major">Export</button>
+        <aside>
+            Editor by <a href="https://bell345.github.io">Thomas Bell</a>.
+            Game by <a href="http://reddit.com/user/awilkowski">A. Wilkowski</a>.
+        </aside>
+        <div id="exporter-container" class="hide">
+            <hr />
+            <textarea id="exporter-output"></textarea>
+            <button id="exporter-return" class="major">Return to Editor</button>
+        </div>
+    </footer>
+</body>
+</html>
